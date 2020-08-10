@@ -52,6 +52,7 @@
 		7BB306B524E1739600DFFB7F /* ACKeychainSwiftConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */; };
 		7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */; };
 		7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */; };
+		7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwiftConstants.swift; sourceTree = "<group>"; };
 		7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheetViewController.swift; sourceTree = "<group>"; };
 		7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheet.swift; sourceTree = "<group>"; };
+		7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPholidota.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
 			isa = PBXGroup;
 			children = (
+				7BB306BB24E173FE00DFFB7F /* ACPholidota */,
 				7BB306AF24E1739600DFFB7F /* ACKeychain */,
 				7BB306B624E173E800DFFB7F /* ACBottomSheet */,
 				7BB306A324E1731D00DFFB7F /* Misc */,
@@ -266,6 +269,14 @@
 				7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */,
 			);
 			path = ACBottomSheet;
+			sourceTree = "<group>";
+		};
+		7BB306BB24E173FE00DFFB7F /* ACPholidota */ = {
+			isa = PBXGroup;
+			children = (
+				7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */,
+			);
+			path = ACPholidota;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +399,7 @@
 				7BB306B524E1739600DFFB7F /* ACKeychainSwiftConstants.swift in Sources */,
 				7BB3067F24E1717B00DFFB7F /* ACTextField.swift in Sources */,
 				7BB306A824E1732B00DFFB7F /* AnyCodable.swift in Sources */,
+				7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */,
 				7BB3067024E1717B00DFFB7F /* ACProgressView.swift in Sources */,
 				7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */,
 				7BB306A024E172C900DFFB7F /* ACTextFieldFilter.swift in Sources */,
