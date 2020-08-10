@@ -50,6 +50,8 @@
 		7BB306B324E1739600DFFB7F /* ACKeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B024E1739600DFFB7F /* ACKeychainSwift.swift */; };
 		7BB306B424E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B124E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift */; };
 		7BB306B524E1739600DFFB7F /* ACKeychainSwiftConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */; };
+		7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */; };
+		7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		7BB306B024E1739600DFFB7F /* ACKeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwift.swift; sourceTree = "<group>"; };
 		7BB306B124E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
 		7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwiftConstants.swift; sourceTree = "<group>"; };
+		7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheetViewController.swift; sourceTree = "<group>"; };
+		7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB306AF24E1739600DFFB7F /* ACKeychain */,
+				7BB306B624E173E800DFFB7F /* ACBottomSheet */,
 				7BB306A324E1731D00DFFB7F /* Misc */,
 				7BB3069624E172B400DFFB7F /* Utility */,
 				7BB3065624E1701100DFFB7F /* UI */,
@@ -252,6 +257,15 @@
 				7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */,
 			);
 			path = ACKeychain;
+			sourceTree = "<group>";
+		};
+		7BB306B624E173E800DFFB7F /* ACBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */,
+				7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */,
+			);
+			path = ACBottomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +389,7 @@
 				7BB3067F24E1717B00DFFB7F /* ACTextField.swift in Sources */,
 				7BB306A824E1732B00DFFB7F /* AnyCodable.swift in Sources */,
 				7BB3067024E1717B00DFFB7F /* ACProgressView.swift in Sources */,
+				7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */,
 				7BB306A024E172C900DFFB7F /* ACTextFieldFilter.swift in Sources */,
 				7BB3066D24E1717B00DFFB7F /* ACQRCodeView.swift in Sources */,
 				7BB3064D24E16D5200DFFB7F /* UIColor+Extension.swift in Sources */,
@@ -389,6 +404,7 @@
 				7BB3067924E1717B00DFFB7F /* ACRefreshControl.swift in Sources */,
 				7BB306A224E172C900DFFB7F /* ACThirdPartyApp.swift in Sources */,
 				7BB3066E24E1717B00DFFB7F /* ACImageViewNetwork.swift in Sources */,
+				7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */,
 				7BB3067B24E1717B00DFFB7F /* RoseTextField.swift in Sources */,
 				7BB3067724E1717B00DFFB7F /* ACSwitcher.swift in Sources */,
 				7BB3067A24E1717B00DFFB7F /* ACImageView.swift in Sources */,
