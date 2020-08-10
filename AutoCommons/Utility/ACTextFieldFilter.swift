@@ -1,0 +1,32 @@
+//
+//  ACTextFieldFilter.swift
+//  AutoCommons
+//
+//  Created by Dhiya Ulhaq Zulha Alamsyah on 08/08/20.
+//  Copyright © 2020 Idolobi. All rights reserved.
+//
+
+import UIKit
+
+class TextFieldFilter {
+    static func input(textField: UITextField? = nil, range: NSRange? = nil,
+                      string: String, inputType: ACInputType) -> Bool {
+        var filterOnly = ""
+        switch inputType {
+        case .alphabetWhiteSpace:
+            filterOnly = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLKMNOPQRSTUVWXYZ "
+        case .phoneNumber:
+            filterOnly = "+1234567890"
+        case .number:
+            filterOnly = "0123456789"
+        case .email:
+            return string.rangeOfCharacter(from: .uppercaseLetters) == nil
+        default:
+            return true
+        }
+        
+        let allowedCharacters = CharacterSet(charactersIn: filterOnly)
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
+}

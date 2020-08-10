@@ -152,8 +152,8 @@ public class ACLayout {
         return progressView
     }
     
-    public func qrCode(id: String) -> QRCodeView {
-        let qrCodeView = QRCodeView(frame: .zero)
+    public func qrCode(id: String) -> ACQRCodeView {
+        let qrCodeView = ACQRCodeView(frame: .zero)
         qrCodeView.accessibilityIdentifier = "acQrCode_\(id)"
         qrCodeView.translatesAutoresizingMaskIntoConstraints = false
         return qrCodeView

@@ -38,6 +38,12 @@
 		7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066B24E1717B00DFFB7F /* ACSlider.swift */; };
 		7BB3067F24E1717B00DFFB7F /* ACTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066C24E1717B00DFFB7F /* ACTextField.swift */; };
 		7BB3068124E171E300DFFB7F /* ACLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3068024E171E300DFFB7F /* ACLayout.swift */; };
+		7BB3069D24E172C900DFFB7F /* ACLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3069724E172C800DFFB7F /* ACLogger.swift */; };
+		7BB3069E24E172C900DFFB7F /* ACInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3069824E172C800DFFB7F /* ACInputValidator.swift */; };
+		7BB3069F24E172C900DFFB7F /* ACFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3069924E172C800DFFB7F /* ACFormatter.swift */; };
+		7BB306A024E172C900DFFB7F /* ACTextFieldFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3069A24E172C900DFFB7F /* ACTextFieldFilter.swift */; };
+		7BB306A124E172C900DFFB7F /* ACDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3069B24E172C900DFFB7F /* ACDebouncer.swift */; };
+		7BB306A224E172C900DFFB7F /* ACThirdPartyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3069C24E172C900DFFB7F /* ACThirdPartyApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +91,12 @@
 		7BB3066B24E1717B00DFFB7F /* ACSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACSlider.swift; sourceTree = "<group>"; };
 		7BB3066C24E1717B00DFFB7F /* ACTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACTextField.swift; sourceTree = "<group>"; };
 		7BB3068024E171E300DFFB7F /* ACLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLayout.swift; sourceTree = "<group>"; };
+		7BB3069724E172C800DFFB7F /* ACLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLogger.swift; sourceTree = "<group>"; };
+		7BB3069824E172C800DFFB7F /* ACInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACInputValidator.swift; sourceTree = "<group>"; };
+		7BB3069924E172C800DFFB7F /* ACFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACFormatter.swift; sourceTree = "<group>"; };
+		7BB3069A24E172C900DFFB7F /* ACTextFieldFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACTextFieldFilter.swift; sourceTree = "<group>"; };
+		7BB3069B24E172C900DFFB7F /* ACDebouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACDebouncer.swift; sourceTree = "<group>"; };
+		7BB3069C24E172C900DFFB7F /* ACThirdPartyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACThirdPartyApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +139,7 @@
 		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
 			isa = PBXGroup;
 			children = (
+				7BB3069624E172B400DFFB7F /* Utility */,
 				7BB3065624E1701100DFFB7F /* UI */,
 				7BB3064724E16CE300DFFB7F /* Extension */,
 				7BB3062F24E1693600DFFB7F /* AutoCommons.h */,
@@ -192,6 +205,19 @@
 				7BB3066824E1717B00DFFB7F /* RoseTextField.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		7BB3069624E172B400DFFB7F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7BB3069B24E172C900DFFB7F /* ACDebouncer.swift */,
+				7BB3069924E172C800DFFB7F /* ACFormatter.swift */,
+				7BB3069824E172C800DFFB7F /* ACInputValidator.swift */,
+				7BB3069724E172C800DFFB7F /* ACLogger.swift */,
+				7BB3069A24E172C900DFFB7F /* ACTextFieldFilter.swift */,
+				7BB3069C24E172C900DFFB7F /* ACThirdPartyApp.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,19 +331,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB3065824E1702400DFFB7F /* ACFontStyle.swift in Sources */,
+				7BB306A124E172C900DFFB7F /* ACDebouncer.swift in Sources */,
 				7BB3064F24E16D6D00DFFB7F /* String+Extension.swift in Sources */,
 				7BB3065524E16F4000DFFB7F /* UIView+Extension.swift in Sources */,
 				7BB3067F24E1717B00DFFB7F /* ACTextField.swift in Sources */,
 				7BB3067024E1717B00DFFB7F /* ACProgressView.swift in Sources */,
+				7BB306A024E172C900DFFB7F /* ACTextFieldFilter.swift in Sources */,
 				7BB3066D24E1717B00DFFB7F /* ACQRCodeView.swift in Sources */,
 				7BB3064D24E16D5200DFFB7F /* UIColor+Extension.swift in Sources */,
 				7BB3067124E1717B00DFFB7F /* ACStackView.swift in Sources */,
 				7BB3066F24E1717B00DFFB7F /* ACIndicatorView.swift in Sources */,
 				7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */,
+				7BB3069D24E172C900DFFB7F /* ACLogger.swift in Sources */,
 				7BB3067D24E1717B00DFFB7F /* ACLabelIcon.swift in Sources */,
 				7BB3068124E171E300DFFB7F /* ACLayout.swift in Sources */,
+				7BB3069E24E172C900DFFB7F /* ACInputValidator.swift in Sources */,
 				7BB3067324E1717B00DFFB7F /* ACTextView.swift in Sources */,
 				7BB3067924E1717B00DFFB7F /* ACRefreshControl.swift in Sources */,
+				7BB306A224E172C900DFFB7F /* ACThirdPartyApp.swift in Sources */,
 				7BB3066E24E1717B00DFFB7F /* ACImageViewNetwork.swift in Sources */,
 				7BB3067B24E1717B00DFFB7F /* RoseTextField.swift in Sources */,
 				7BB3067724E1717B00DFFB7F /* ACSwitcher.swift in Sources */,
@@ -326,6 +357,7 @@
 				7BB3067C24E1717B00DFFB7F /* ACWebView.swift in Sources */,
 				7BB3064B24E16D3500DFFB7F /* UILabel+Extension.swift in Sources */,
 				7BB3067424E1717B00DFFB7F /* ACCollectionView.swift in Sources */,
+				7BB3069F24E172C900DFFB7F /* ACFormatter.swift in Sources */,
 				7BB3065124E16DA000DFFB7F /* Encodable+Extension.swift in Sources */,
 				7BB3067524E1717B00DFFB7F /* ACButton.swift in Sources */,
 				7BB3067824E1717B00DFFB7F /* ACSegmentedControl.swift in Sources */,

@@ -11,7 +11,7 @@ import Foundation
 extension Encodable {
     func toDictionary() -> [String: Any] {
         guard let data = try? JSONEncoder().encode(self) else {
-//            Logger.d("<Encodable>.toDictionary(): JSONEncoder error")
+            ACLogger.d("<Encodable>.toDictionary(): JSONEncoder error")
             return [String: Any]()
         }
         return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] }!
@@ -23,7 +23,7 @@ extension Encodable {
             let jsonData = try JSONEncoder().encode(self)
             jsonString = String(data: jsonData, encoding: .utf8)
         } catch {
-//            Logger.d("\(error.localizedDescription)")
+            ACLogger.d("\(error.localizedDescription)")
         }
         return jsonString
     }
