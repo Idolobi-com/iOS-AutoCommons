@@ -47,6 +47,9 @@
 		7BB306A724E1732B00DFFB7F /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306A424E1732B00DFFB7F /* AnyEncodable.swift */; };
 		7BB306A824E1732B00DFFB7F /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306A524E1732B00DFFB7F /* AnyCodable.swift */; };
 		7BB306A924E1732B00DFFB7F /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306A624E1732B00DFFB7F /* AnyDecodable.swift */; };
+		7BB306B324E1739600DFFB7F /* ACKeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B024E1739600DFFB7F /* ACKeychainSwift.swift */; };
+		7BB306B424E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B124E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift */; };
+		7BB306B524E1739600DFFB7F /* ACKeychainSwiftConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,9 @@
 		7BB306A424E1732B00DFFB7F /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
 		7BB306A524E1732B00DFFB7F /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
 		7BB306A624E1732B00DFFB7F /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
+		7BB306B024E1739600DFFB7F /* ACKeychainSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwift.swift; sourceTree = "<group>"; };
+		7BB306B124E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKeychainSwiftConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,7 @@
 		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
 			isa = PBXGroup;
 			children = (
+				7BB306AF24E1739600DFFB7F /* ACKeychain */,
 				7BB306A324E1731D00DFFB7F /* Misc */,
 				7BB3069624E172B400DFFB7F /* Utility */,
 				7BB3065624E1701100DFFB7F /* UI */,
@@ -235,6 +242,16 @@
 				7BB3065724E1702400DFFB7F /* ACFontStyle.swift */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		7BB306AF24E1739600DFFB7F /* ACKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				7BB306B024E1739600DFFB7F /* ACKeychainSwift.swift */,
+				7BB306B124E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift */,
+				7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */,
+			);
+			path = ACKeychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +369,9 @@
 				7BB3064F24E16D6D00DFFB7F /* String+Extension.swift in Sources */,
 				7BB306A924E1732B00DFFB7F /* AnyDecodable.swift in Sources */,
 				7BB3065524E16F4000DFFB7F /* UIView+Extension.swift in Sources */,
+				7BB306B424E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift in Sources */,
+				7BB306B324E1739600DFFB7F /* ACKeychainSwift.swift in Sources */,
+				7BB306B524E1739600DFFB7F /* ACKeychainSwiftConstants.swift in Sources */,
 				7BB3067F24E1717B00DFFB7F /* ACTextField.swift in Sources */,
 				7BB306A824E1732B00DFFB7F /* AnyCodable.swift in Sources */,
 				7BB3067024E1717B00DFFB7F /* ACProgressView.swift in Sources */,
