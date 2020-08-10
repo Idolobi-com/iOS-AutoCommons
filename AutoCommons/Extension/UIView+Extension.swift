@@ -18,3 +18,24 @@ extension UIView {
     }
     
 }
+
+extension UIView {
+    
+    public func consTopSafeArea(view: UIView, constant: CGFloat = 0) -> NSLayoutConstraint {
+        if #available(iOS 11.0, *) {
+            return self.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: constant)
+        } else {
+            return self.topAnchor.constraint(equalTo: view.topAnchor, constant: constant)
+        }
+    }
+    
+    public func consBottomSafeArea(view: UIView, constant: CGFloat = 0) -> NSLayoutConstraint {
+        if #available(iOS 11.0, *) {
+            return self.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: constant)
+        } else {
+            return self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: constant)
+        }
+    }
+    
+}
+
