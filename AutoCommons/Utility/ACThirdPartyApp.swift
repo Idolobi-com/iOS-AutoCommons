@@ -37,7 +37,7 @@ public class ACThirdPartyApp {
             composeVC.setMessageBody(body, isHTML: false)
             viewController.present(composeVC, animated: true, completion: nil)
         } else {
-//            ACSnacky.show(title: "Can't send email")
+            ACSnacky.show(title: "Can't send email")
         }
         
         return isCanSendMail

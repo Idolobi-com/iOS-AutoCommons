@@ -32,7 +32,7 @@
 		7BB3067824E1717B00DFFB7F /* ACSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066524E1717A00DFFB7F /* ACSegmentedControl.swift */; };
 		7BB3067924E1717B00DFFB7F /* ACRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066624E1717A00DFFB7F /* ACRefreshControl.swift */; };
 		7BB3067A24E1717B00DFFB7F /* ACImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066724E1717A00DFFB7F /* ACImageView.swift */; };
-		7BB3067B24E1717B00DFFB7F /* RoseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066824E1717B00DFFB7F /* RoseTextField.swift */; };
+		7BB3067B24E1717B00DFFB7F /* ACRoseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066824E1717B00DFFB7F /* ACRoseTextField.swift */; };
 		7BB3067C24E1717B00DFFB7F /* ACWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066924E1717B00DFFB7F /* ACWebView.swift */; };
 		7BB3067D24E1717B00DFFB7F /* ACLabelIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066A24E1717B00DFFB7F /* ACLabelIcon.swift */; };
 		7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3066B24E1717B00DFFB7F /* ACSlider.swift */; };
@@ -96,7 +96,7 @@
 		7BB3066524E1717A00DFFB7F /* ACSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACSegmentedControl.swift; sourceTree = "<group>"; };
 		7BB3066624E1717A00DFFB7F /* ACRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRefreshControl.swift; sourceTree = "<group>"; };
 		7BB3066724E1717A00DFFB7F /* ACImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACImageView.swift; sourceTree = "<group>"; };
-		7BB3066824E1717B00DFFB7F /* RoseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoseTextField.swift; sourceTree = "<group>"; };
+		7BB3066824E1717B00DFFB7F /* ACRoseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACRoseTextField.swift; sourceTree = "<group>"; };
 		7BB3066924E1717B00DFFB7F /* ACWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACWebView.swift; sourceTree = "<group>"; };
 		7BB3066A24E1717B00DFFB7F /* ACLabelIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLabelIcon.swift; sourceTree = "<group>"; };
 		7BB3066B24E1717B00DFFB7F /* ACSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACSlider.swift; sourceTree = "<group>"; };
@@ -161,10 +161,10 @@
 		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
 			isa = PBXGroup;
 			children = (
-				7BB306BB24E173FE00DFFB7F /* ACPholidota */,
-				7BB306BE24E1742400DFFB7F /* ACSnacky */,
-				7BB306AF24E1739600DFFB7F /* ACKeychain */,
-				7BB306B624E173E800DFFB7F /* ACBottomSheet */,
+				7BB306BB24E173FE00DFFB7F /* Pholidota */,
+				7BB306BE24E1742400DFFB7F /* Snacky */,
+				7BB306AF24E1739600DFFB7F /* Keychain */,
+				7BB306B624E173E800DFFB7F /* BottomSheet */,
 				7BB306A324E1731D00DFFB7F /* Misc */,
 				7BB3069624E172B400DFFB7F /* Utility */,
 				7BB3065624E1701100DFFB7F /* UI */,
@@ -201,15 +201,7 @@
 		7BB3065624E1701100DFFB7F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				7BB3065924E1712800DFFB7F /* Component */,
-				7BB3068024E171E300DFFB7F /* ACLayout.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		7BB3065924E1712800DFFB7F /* Component */ = {
-			isa = PBXGroup;
-			children = (
+				7BB3066824E1717B00DFFB7F /* ACRoseTextField.swift */,
 				7BB3066224E1717A00DFFB7F /* ACButton.swift */,
 				7BB3066124E1717A00DFFB7F /* ACCollectionView.swift */,
 				7BB3066724E1717A00DFFB7F /* ACImageView.swift */,
@@ -228,9 +220,9 @@
 				7BB3066024E1717A00DFFB7F /* ACTextView.swift */,
 				7BB3066924E1717B00DFFB7F /* ACWebView.swift */,
 				7BB3065A24E1717900DFFB7F /* ACQRCodeView.swift */,
-				7BB3066824E1717B00DFFB7F /* RoseTextField.swift */,
+				7BB3068024E171E300DFFB7F /* ACLayout.swift */,
 			);
-			path = Component;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		7BB3069624E172B400DFFB7F /* Utility */ = {
@@ -257,40 +249,40 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
-		7BB306AF24E1739600DFFB7F /* ACKeychain */ = {
+		7BB306AF24E1739600DFFB7F /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
 				7BB306B024E1739600DFFB7F /* ACKeychainSwift.swift */,
 				7BB306B124E1739600DFFB7F /* ACKeychainSwiftAccessOptions.swift */,
 				7BB306B224E1739600DFFB7F /* ACKeychainSwiftConstants.swift */,
 			);
-			path = ACKeychain;
+			path = Keychain;
 			sourceTree = "<group>";
 		};
-		7BB306B624E173E800DFFB7F /* ACBottomSheet */ = {
+		7BB306B624E173E800DFFB7F /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
 				7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */,
 				7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */,
 			);
-			path = ACBottomSheet;
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
-		7BB306BB24E173FE00DFFB7F /* ACPholidota */ = {
+		7BB306BB24E173FE00DFFB7F /* Pholidota */ = {
 			isa = PBXGroup;
 			children = (
 				7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */,
 			);
-			path = ACPholidota;
+			path = Pholidota;
 			sourceTree = "<group>";
 		};
-		7BB306BE24E1742400DFFB7F /* ACSnacky */ = {
+		7BB306BE24E1742400DFFB7F /* Snacky */ = {
 			isa = PBXGroup;
 			children = (
 				7BB306BF24E1742400DFFB7F /* ACSnacky.swift */,
 				7BB306C024E1742400DFFB7F /* SnackyView.swift */,
 			);
-			path = ACSnacky;
+			path = Snacky;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +424,7 @@
 				7BB306A224E172C900DFFB7F /* ACThirdPartyApp.swift in Sources */,
 				7BB3066E24E1717B00DFFB7F /* ACImageViewNetwork.swift in Sources */,
 				7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */,
-				7BB3067B24E1717B00DFFB7F /* RoseTextField.swift in Sources */,
+				7BB3067B24E1717B00DFFB7F /* ACRoseTextField.swift in Sources */,
 				7BB3067724E1717B00DFFB7F /* ACSwitcher.swift in Sources */,
 				7BB3067A24E1717B00DFFB7F /* ACImageView.swift in Sources */,
 				7BB3065324E16ED000DFFB7F /* CGFloat+Extension.swift in Sources */,

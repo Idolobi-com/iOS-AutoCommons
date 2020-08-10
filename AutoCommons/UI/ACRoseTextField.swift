@@ -1,5 +1,5 @@
 //
-//  RoseTextField.swift
+//  ACRoseTextField.swift
 //  AutoCommons
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 07/08/20.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-public enum RoseTextFieldStyle {
+public enum ACRoseTextFieldStyle {
     case bottomLine, border, spinner
 }
 
-public class RoseTextField: UITextField {
+public class ACRoseTextField: UITextField {
     
     private lazy var viewBorderBottom: UIView = {
         let view = UIView(frame: .zero)
@@ -23,9 +23,9 @@ public class RoseTextField: UITextField {
     
     private var padding = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
     
-    private var textFieldStyle: RoseTextFieldStyle = .bottomLine
+    private var textFieldStyle: ACRoseTextFieldStyle = .bottomLine
     
-    init(style: RoseTextFieldStyle) {
+    init(style: ACRoseTextFieldStyle) {
         super.init(frame: .zero)
         textFieldStyle = style
         autocorrectionType = .no

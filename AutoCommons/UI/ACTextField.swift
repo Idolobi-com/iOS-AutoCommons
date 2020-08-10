@@ -16,8 +16,8 @@ public class ACTextField: UIView {
         return stackView
     }()
     
-    lazy var textField: RoseTextField = {
-        return RoseTextField(style: .border)
+    lazy var textField: ACRoseTextField = {
+        return ACRoseTextField(style: .border)
     }()
     
     let labelMessage: UILabel = {
@@ -35,9 +35,9 @@ public class ACTextField: UIView {
         return label
     }()
     
-    init(style: RoseTextFieldStyle) {
+    init(style: ACRoseTextFieldStyle) {
         super.init(frame: .zero)
-        textField = RoseTextField(style: style)
+        textField = ACRoseTextField(style: style)
         textField.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
         addSubview(textField)

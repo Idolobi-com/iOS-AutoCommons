@@ -84,7 +84,7 @@ public class ACLayout {
     }
     
     public func textfield(id: String, placeHolder: String? = nil,
-               style: RoseTextFieldStyle) -> ACTextField {
+               style: ACRoseTextFieldStyle) -> ACTextField {
         let textField = ACTextField(style: style)
         textField.accessibilityIdentifier = "textfield_\(id)"
         textField.translatesAutoresizingMaskIntoConstraints = false
