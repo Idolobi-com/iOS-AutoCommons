@@ -53,6 +53,8 @@
 		7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */; };
 		7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */; };
 		7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */; };
+		7BB306C124E1742400DFFB7F /* ACSnacky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BF24E1742400DFFB7F /* ACSnacky.swift */; };
+		7BB306C224E1742400DFFB7F /* SnackyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306C024E1742400DFFB7F /* SnackyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheetViewController.swift; sourceTree = "<group>"; };
 		7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheet.swift; sourceTree = "<group>"; };
 		7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPholidota.swift; sourceTree = "<group>"; };
+		7BB306BF24E1742400DFFB7F /* ACSnacky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACSnacky.swift; sourceTree = "<group>"; };
+		7BB306C024E1742400DFFB7F /* SnackyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				7BB306BB24E173FE00DFFB7F /* ACPholidota */,
+				7BB306BE24E1742400DFFB7F /* ACSnacky */,
 				7BB306AF24E1739600DFFB7F /* ACKeychain */,
 				7BB306B624E173E800DFFB7F /* ACBottomSheet */,
 				7BB306A324E1731D00DFFB7F /* Misc */,
@@ -277,6 +282,15 @@
 				7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */,
 			);
 			path = ACPholidota;
+			sourceTree = "<group>";
+		};
+		7BB306BE24E1742400DFFB7F /* ACSnacky */ = {
+			isa = PBXGroup;
+			children = (
+				7BB306BF24E1742400DFFB7F /* ACSnacky.swift */,
+				7BB306C024E1742400DFFB7F /* SnackyView.swift */,
+			);
+			path = ACSnacky;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +422,7 @@
 				7BB3067124E1717B00DFFB7F /* ACStackView.swift in Sources */,
 				7BB3066F24E1717B00DFFB7F /* ACIndicatorView.swift in Sources */,
 				7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */,
+				7BB306C224E1742400DFFB7F /* SnackyView.swift in Sources */,
 				7BB3069D24E172C900DFFB7F /* ACLogger.swift in Sources */,
 				7BB3067D24E1717B00DFFB7F /* ACLabelIcon.swift in Sources */,
 				7BB3068124E171E300DFFB7F /* ACLayout.swift in Sources */,
@@ -431,6 +446,7 @@
 				7BB306A724E1732B00DFFB7F /* AnyEncodable.swift in Sources */,
 				7BB3067224E1717B00DFFB7F /* ACLabel.swift in Sources */,
 				7BB3067624E1717B00DFFB7F /* ACPageControl.swift in Sources */,
+				7BB306C124E1742400DFFB7F /* ACSnacky.swift in Sources */,
 				7BB3064924E16D0A00DFFB7F /* Double+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
