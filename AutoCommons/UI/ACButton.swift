@@ -133,9 +133,9 @@ public enum ACButtonStyle {
     var height: CGFloat {
         switch self {
         case .fillNormal, .ghostNormal, .nudeNormal:
-            return CGFloat(32)
-        case .fillSmall, .ghostSmall, .nudeSmall:
             return CGFloat(48)
+        case .fillSmall, .ghostSmall, .nudeSmall:
+            return CGFloat(32)
         }
     }
 }

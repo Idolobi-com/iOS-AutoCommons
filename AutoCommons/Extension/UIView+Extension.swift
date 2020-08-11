@@ -37,5 +37,13 @@ extension UIView {
         }
     }
     
+    public func consLeading(view: UIView, constant: CGFloat = 0) -> NSLayoutConstraint {
+        return self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant)
+    }
+    
+    public func consTrailing(view: UIView, constant: CGFloat = 0) -> NSLayoutConstraint {
+        return self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant)
+    }
+    
 }
 

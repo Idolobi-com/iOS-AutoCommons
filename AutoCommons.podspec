@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "AutoCommons"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of AutoCommons."
+  spec.summary      = "AutoCommons is all in one iOS UI components and utilities"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  AutoCommons provide all component you need to build an iOS App like UI component, utility, etc.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/AutoCommons"
+  spec.homepage     = "https://idolobi.com"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -52,9 +53,9 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Dhiya Ulhaq Zulha Alamsyah" => "dhiya@mamiteam.com" }
+  spec.author             = { "Dhiya Ulhaq Zulha Alamsyah" => "dhiyaulhaqza@gmail.com" }
   # Or just: spec.author    = "Dhiya Ulhaq Zulha Alamsyah"
-  # spec.authors            = { "Dhiya Ulhaq Zulha Alamsyah" => "dhiya@mamiteam.com" }
+  # spec.authors            = { "Dhiya Ulhaq Zulha Alamsyah" => "dhiyaulhaqza@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Dhiya Ulhaq Zulha Alamsyah"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/AutoCommons.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Idolobi-com/iOS-AutoCommons.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
