@@ -254,6 +254,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		7B6760D424EA857D00E597BA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7BB3062224E1693600DFFB7F = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +288,7 @@
 		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
 			isa = PBXGroup;
 			children = (
+				7B6760D424EA857D00E597BA /* New Group */,
 				7BB306BE24E1742400DFFB7F /* Snacky */,
 				7BB306BB24E173FE00DFFB7F /* Pholidota */,
 				7BB306AF24E1739600DFFB7F /* Keychain */,
