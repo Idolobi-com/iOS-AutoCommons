@@ -71,7 +71,11 @@ class HomeViewController: UICollectionViewController {
         }
         
         buttonNude.onClick {
-            ACSnacky.show(title: "Button Nude Normal clicked !")
+            ACSnacky.show(view: self.view, title: "Title wkwkkwk wkkwkwk wkwkkw kwkwkw wkkwkw wkkwkw kwkwk wkkwkw kwkwk", buttonTitle: "Title", completion: { (isClick) in
+                if isClick {
+                    ACSnacky.show(title: "Clicked")
+                }
+            })
         }
     }
     

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B18500824E67D9800F58E22 /* ACSnacky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18500724E67D9800F58E22 /* ACSnacky.swift */; };
+		7B18500A24E67DA500F58E22 /* ACSnackyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18500924E67DA500F58E22 /* ACSnackyView.swift */; };
+		7B18523F24E6AE2F00F58E22 /* ACSnacky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18500724E67D9800F58E22 /* ACSnacky.swift */; };
+		7B18524024E6AE3400F58E22 /* ACSnackyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18500924E67DA500F58E22 /* ACSnackyView.swift */; };
 		7B39221F24E2E2D30048E568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39221E24E2E2D30048E568 /* AppDelegate.swift */; };
 		7B39222124E2E2D30048E568 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39222024E2E2D30048E568 /* SceneDelegate.swift */; };
 		7B39222824E2E2D60048E568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B39222724E2E2D60048E568 /* Assets.xcassets */; };
@@ -66,8 +70,6 @@
 		7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */; };
 		7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */; };
 		7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */; };
-		7BB306C124E1742400DFFB7F /* ACSnacky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BF24E1742400DFFB7F /* ACSnacky.swift */; };
-		7BB306C224E1742400DFFB7F /* SnackyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306C024E1742400DFFB7F /* SnackyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B18500724E67D9800F58E22 /* ACSnacky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSnacky.swift; sourceTree = "<group>"; };
+		7B18500924E67DA500F58E22 /* ACSnackyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSnackyView.swift; sourceTree = "<group>"; };
 		7B39221C24E2E2D30048E568 /* AutoCommonsExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCommonsExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B39221E24E2E2D30048E568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B39222024E2E2D30048E568 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,8 +167,6 @@
 		7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheetViewController.swift; sourceTree = "<group>"; };
 		7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheet.swift; sourceTree = "<group>"; };
 		7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPholidota.swift; sourceTree = "<group>"; };
-		7BB306BF24E1742400DFFB7F /* ACSnacky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACSnacky.swift; sourceTree = "<group>"; };
-		7BB306C024E1742400DFFB7F /* SnackyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,8 +281,8 @@
 		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
 			isa = PBXGroup;
 			children = (
-				7BB306BB24E173FE00DFFB7F /* Pholidota */,
 				7BB306BE24E1742400DFFB7F /* Snacky */,
+				7BB306BB24E173FE00DFFB7F /* Pholidota */,
 				7BB306AF24E1739600DFFB7F /* Keychain */,
 				7BB306B624E173E800DFFB7F /* BottomSheet */,
 				7BB3069624E172B400DFFB7F /* Utility */,
@@ -397,8 +399,8 @@
 		7BB306BE24E1742400DFFB7F /* Snacky */ = {
 			isa = PBXGroup;
 			children = (
-				7BB306BF24E1742400DFFB7F /* ACSnacky.swift */,
-				7BB306C024E1742400DFFB7F /* SnackyView.swift */,
+				7B18500724E67D9800F58E22 /* ACSnacky.swift */,
+				7B18500924E67DA500F58E22 /* ACSnackyView.swift */,
 			);
 			path = Snacky;
 			sourceTree = "<group>";
@@ -606,10 +608,12 @@
 				7B39225724E2E3980048E568 /* HomePresenter.swift in Sources */,
 				7B39225624E2E3980048E568 /* HomeRouter.swift in Sources */,
 				7B39225A24E2E3980048E568 /* HomeEntity.swift in Sources */,
+				7B18523F24E6AE2F00F58E22 /* ACSnacky.swift in Sources */,
 				7B39225824E2E3980048E568 /* HomeViewController.swift in Sources */,
 				7B39225424E2E3980048E568 /* HomePresenterProtocol.swift in Sources */,
 				7B39221F24E2E2D30048E568 /* AppDelegate.swift in Sources */,
 				7B39225924E2E3980048E568 /* HomeInteractor.swift in Sources */,
+				7B18524024E6AE3400F58E22 /* ACSnackyView.swift in Sources */,
 				7B39222124E2E2D30048E568 /* SceneDelegate.swift in Sources */,
 				7B39225524E2E3980048E568 /* HomeViewPresenterToView.swift in Sources */,
 			);
@@ -646,6 +650,7 @@
 				7BB3067F24E1717B00DFFB7F /* ACTextField.swift in Sources */,
 				7BB306A824E1732B00DFFB7F /* AnyCodable.swift in Sources */,
 				7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */,
+				7B18500A24E67DA500F58E22 /* ACSnackyView.swift in Sources */,
 				7BB3067024E1717B00DFFB7F /* ACProgressView.swift in Sources */,
 				7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */,
 				7BB306A024E172C900DFFB7F /* ACTextFieldFilter.swift in Sources */,
@@ -654,10 +659,10 @@
 				7BB3067124E1717B00DFFB7F /* ACStackView.swift in Sources */,
 				7BB3066F24E1717B00DFFB7F /* ACIndicatorView.swift in Sources */,
 				7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */,
-				7BB306C224E1742400DFFB7F /* SnackyView.swift in Sources */,
 				7BB3069D24E172C900DFFB7F /* ACLogger.swift in Sources */,
 				7BB3067D24E1717B00DFFB7F /* ACLabelIcon.swift in Sources */,
 				7BB3068124E171E300DFFB7F /* ACLayout.swift in Sources */,
+				7B18500824E67D9800F58E22 /* ACSnacky.swift in Sources */,
 				7BB3069E24E172C900DFFB7F /* ACInputValidator.swift in Sources */,
 				7BB3067324E1717B00DFFB7F /* ACTextView.swift in Sources */,
 				7BB3067924E1717B00DFFB7F /* ACRefreshControl.swift in Sources */,
@@ -678,7 +683,6 @@
 				7BB306A724E1732B00DFFB7F /* AnyEncodable.swift in Sources */,
 				7BB3067224E1717B00DFFB7F /* ACLabel.swift in Sources */,
 				7BB3067624E1717B00DFFB7F /* ACPageControl.swift in Sources */,
-				7BB306C124E1742400DFFB7F /* ACSnacky.swift in Sources */,
 				7BB3064924E16D0A00DFFB7F /* Double+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
