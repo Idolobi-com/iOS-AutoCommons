@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   AutoCommons provide all component you need to build an iOS App like UI component, utility, etc.
                    DESC
   spec.homepage     = "https://github.com/Idolobi-com/iOS-AutoCommons"
-  spec.license      = "MIT"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   spec.author             = { "Dhiya Ulhaq Zulha Alamsyah" => "dhiyaulhaqza@gmail.com" }
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/Idolobi-com/iOS-AutoCommons.git", :tag => "#{spec.version}" }
