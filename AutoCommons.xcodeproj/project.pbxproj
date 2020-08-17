@@ -15,8 +15,8 @@
 		7B39222124E2E2D30048E568 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39222024E2E2D30048E568 /* SceneDelegate.swift */; };
 		7B39222824E2E2D60048E568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B39222724E2E2D60048E568 /* Assets.xcassets */; };
 		7B39222B24E2E2D60048E568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B39222924E2E2D60048E568 /* LaunchScreen.storyboard */; };
-		7B39223624E2E2D60048E568 /* AutoCommonsExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39223524E2E2D60048E568 /* AutoCommonsExamplesTests.swift */; };
-		7B39224124E2E2D60048E568 /* AutoCommonsExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39224024E2E2D60048E568 /* AutoCommonsExamplesUITests.swift */; };
+		7B39223624E2E2D60048E568 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39223524E2E2D60048E568 /* ExampleTests.swift */; };
+		7B39224124E2E2D60048E568 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39224024E2E2D60048E568 /* ExampleUITests.swift */; };
 		7B39225424E2E3980048E568 /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39224D24E2E3980048E568 /* HomePresenterProtocol.swift */; };
 		7B39225524E2E3980048E568 /* HomeViewPresenterToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39224E24E2E3980048E568 /* HomeViewPresenterToView.swift */; };
 		7B39225624E2E3980048E568 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39224F24E2E3980048E568 /* HomeRouter.swift */; };
@@ -106,10 +106,10 @@
 		7B39222A24E2E2D60048E568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B39222C24E2E2D60048E568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B39223124E2E2D60048E568 /* AutoCommonsExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCommonsExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B39223524E2E2D60048E568 /* AutoCommonsExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCommonsExamplesTests.swift; sourceTree = "<group>"; };
+		7B39223524E2E2D60048E568 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		7B39223724E2E2D60048E568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B39223C24E2E2D60048E568 /* AutoCommonsExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCommonsExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B39224024E2E2D60048E568 /* AutoCommonsExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCommonsExamplesUITests.swift; sourceTree = "<group>"; };
+		7B39224024E2E2D60048E568 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		7B39224224E2E2D60048E568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B39224D24E2E3980048E568 /* HomePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterProtocol.swift; sourceTree = "<group>"; };
 		7B39224E24E2E3980048E568 /* HomeViewPresenterToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenterToView.swift; sourceTree = "<group>"; };
@@ -209,7 +209,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B39221D24E2E2D30048E568 /* AutoCommonsExamples */ = {
+		7B39221D24E2E2D30048E568 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				7B39224C24E2E3770048E568 /* Home */,
@@ -219,25 +219,25 @@
 				7B39222924E2E2D60048E568 /* LaunchScreen.storyboard */,
 				7B39222C24E2E2D60048E568 /* Info.plist */,
 			);
-			path = AutoCommonsExamples;
+			path = Example;
 			sourceTree = "<group>";
 		};
-		7B39223424E2E2D60048E568 /* AutoCommonsExamplesTests */ = {
+		7B39223424E2E2D60048E568 /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B39223524E2E2D60048E568 /* AutoCommonsExamplesTests.swift */,
+				7B39223524E2E2D60048E568 /* ExampleTests.swift */,
 				7B39223724E2E2D60048E568 /* Info.plist */,
 			);
-			path = AutoCommonsExamplesTests;
+			path = ExampleTests;
 			sourceTree = "<group>";
 		};
-		7B39223F24E2E2D60048E568 /* AutoCommonsExamplesUITests */ = {
+		7B39223F24E2E2D60048E568 /* ExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7B39224024E2E2D60048E568 /* AutoCommonsExamplesUITests.swift */,
+				7B39224024E2E2D60048E568 /* ExampleUITests.swift */,
 				7B39224224E2E2D60048E568 /* Info.plist */,
 			);
-			path = AutoCommonsExamplesUITests;
+			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
 		7B39224C24E2E3770048E568 /* Home */ = {
@@ -264,11 +264,11 @@
 		7BB3062224E1693600DFFB7F = {
 			isa = PBXGroup;
 			children = (
-				7BB3062E24E1693600DFFB7F /* AutoCommons */,
-				7BB3063924E1693600DFFB7F /* AutoCommonsTests */,
-				7B39221D24E2E2D30048E568 /* AutoCommonsExamples */,
-				7B39223424E2E2D60048E568 /* AutoCommonsExamplesTests */,
-				7B39223F24E2E2D60048E568 /* AutoCommonsExamplesUITests */,
+				7BB3062E24E1693600DFFB7F /* Source */,
+				7BB3063924E1693600DFFB7F /* Tests */,
+				7B39221D24E2E2D30048E568 /* Example */,
+				7B39223424E2E2D60048E568 /* ExampleTests */,
+				7B39223F24E2E2D60048E568 /* ExampleUITests */,
 				7BB3062D24E1693600DFFB7F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BB3062E24E1693600DFFB7F /* AutoCommons */ = {
+		7BB3062E24E1693600DFFB7F /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7B6760D424EA857D00E597BA /* New Group */,
@@ -300,16 +300,16 @@
 				7BB3062F24E1693600DFFB7F /* AutoCommons.h */,
 				7BB3063024E1693600DFFB7F /* Info.plist */,
 			);
-			path = AutoCommons;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		7BB3063924E1693600DFFB7F /* AutoCommonsTests */ = {
+		7BB3063924E1693600DFFB7F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				7BB3063A24E1693600DFFB7F /* AutoCommonsTests.swift */,
 				7BB3063C24E1693600DFFB7F /* Info.plist */,
 			);
-			path = AutoCommonsTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		7BB3064724E16CE300DFFB7F /* Extension */ = {
@@ -631,7 +631,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B39223624E2E2D60048E568 /* AutoCommonsExamplesTests.swift in Sources */,
+				7B39223624E2E2D60048E568 /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +639,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B39224124E2E2D60048E568 /* AutoCommonsExamplesUITests.swift in Sources */,
+				7B39224124E2E2D60048E568 /* ExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,7 +740,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AutoCommonsExamples/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -757,7 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AutoCommonsExamples/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -978,7 +978,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AutoCommons/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1005,7 +1005,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AutoCommons/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

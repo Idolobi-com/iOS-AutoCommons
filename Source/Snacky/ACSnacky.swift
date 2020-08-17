@@ -91,7 +91,7 @@ open class ACSnacky: Equatable {
     }
     
     internal func frameForView() -> CGRect {
-        guard let superview = viewToDisplayIn ?? UIApplication.shared.keyWindow ?? nil else {
+        guard let superview = viewToDisplayIn ?? UIApplication.shared.windows.first(where: { $0.isKeyWindow }) ?? nil else {
             return .zero
         }
         let width: CGFloat = superview.bounds.width * widthPercent
@@ -232,7 +232,7 @@ open class ACSnacky: Equatable {
     }
     
     open func show(displayDuration: TimeInterval? = 5.0, animated: Bool = true, completion: SnackyCompletion? = nil) {
-        guard let superview = viewToDisplayIn ?? UIApplication.shared.keyWindow ?? nil else {
+        guard let superview = viewToDisplayIn ?? UIApplication.shared.windows.first(where: { $0.isKeyWindow }) ?? nil else {
             fatalError("Unable to get a superview, was not able to show\n Couldn't add ACSnackyView as a subview to the main UIWindow")
         }
         
