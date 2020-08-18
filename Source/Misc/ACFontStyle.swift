@@ -11,7 +11,7 @@ import UIKit
 public enum ACFontStyle {
     case largeTitle, title1, title2, title3, headline, body, callout, subhead, footnote, caption1, caption2
     
-    var font: String {
+    public var font: String {
         switch self {
         case .largeTitle, .title1, .title2, .title3, .headline:
             return "ArialRoundedMTBold"
@@ -20,7 +20,7 @@ public enum ACFontStyle {
         }
     }
     
-    var size: CGFloat {
+    public var size: CGFloat {
         switch self {
         case .largeTitle:
             return 34
