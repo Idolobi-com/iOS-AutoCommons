@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "AutoCommons"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "AutoCommons is all in one iOS UI components and utilities"
   spec.description  = <<-DESC
   AutoCommons provide all component you need to build an iOS App like UI component, utility, etc.
