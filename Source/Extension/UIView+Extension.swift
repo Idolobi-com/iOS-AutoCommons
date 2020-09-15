@@ -17,6 +17,15 @@ extension UIView {
         layer.mask = mask
     }
     
+    public func asCardView(cornerRadius: CGFloat = 8.0, shadowRadius: CGFloat = 6.0, shadowOpacity: CGFloat = 0.4) {
+        self.backgroundColor = .white
+        self.layer.cornerRadius = cornerRadius
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        self.layer.shadowRadius = shadowRadius
+        self.layer.shadowOpacity = Float(shadowOpacity)
+    }
+    
 }
 
 extension UIView {

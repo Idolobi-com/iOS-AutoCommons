@@ -40,14 +40,16 @@ open class ACButton: UIButton, ACButtonBehavior {
         case .ghostNormal, .ghostSmall:
             defaultBgColor = .white
             self.setStyleGhostNormal()
-        case .nudeNormal, .nudeSmall:
+        case .nudeNormal, .nudeSmall, .plain:
             defaultBgColor = nil
             defaultBorderColor = nil
             self.setStyleNudeNormal()
         }
-        self.heightAnchor.constraint(equalToConstant: style.height).isActive = true
-        self.layer.cornerRadius = .cornerMedium
-        contentEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        if style.height != 0 {
+            self.heightAnchor.constraint(equalToConstant: style.height).isActive = true
+            self.layer.cornerRadius = .cornerMedium
+            contentEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        }
     }
     
     public func setStyleFillNormal() {
@@ -99,7 +101,7 @@ open class ACButton: UIButton, ACButtonBehavior {
                 self.setStyleFillNormal()
             case .ghostNormal, .ghostSmall:
                 self.setStyleGhostNormal()
-            case .nudeNormal, .nudeSmall:
+            case .nudeNormal, .nudeSmall, .plain:
                 self.setStyleNudeNormal()
             }
         } else {
@@ -108,7 +110,7 @@ open class ACButton: UIButton, ACButtonBehavior {
                 self.setStyleFillDisable()
             case .ghostNormal, .ghostSmall:
                 self.setStyleGhostDisable()
-            case .nudeNormal, .nudeSmall:
+            case .nudeNormal, .nudeSmall, .plain:
                 self.setStyleNudeDisable()
             }
         }
@@ -128,7 +130,7 @@ protocol ACButtonBehavior {
 }
 
 public enum ACButtonStyle {
-    case fillNormal, ghostNormal, nudeNormal, fillSmall, ghostSmall, nudeSmall
+    case fillNormal, ghostNormal, nudeNormal, fillSmall, ghostSmall, nudeSmall, plain
     
     var height: CGFloat {
         switch self {
@@ -136,6 +138,8 @@ public enum ACButtonStyle {
             return CGFloat(48)
         case .fillSmall, .ghostSmall, .nudeSmall:
             return CGFloat(32)
+        case .plain:
+            return CGFloat(0)
         }
     }
 }

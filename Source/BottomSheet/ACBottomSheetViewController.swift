@@ -38,10 +38,6 @@ public class ACBottomSheetViewController: UIViewController {
         super.viewDidLoad()
         setupComponent()
         setupConstraint()
-    }
-    
-    public override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         initialMove()
     }
     
@@ -67,7 +63,7 @@ public class ACBottomSheetViewController: UIViewController {
         }, completion: nil)
     }
     
-    func onStateChanged(callback: @escaping ((Int) -> Void)) {
+    public func onStateChanged(callback: @escaping ((Int) -> Void)) {
         self.callback = callback
     }
     

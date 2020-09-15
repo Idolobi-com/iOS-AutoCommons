@@ -26,6 +26,8 @@ public class ACBottomSheet {
     public var states = [UIScreen.main.bounds.height,
                          UIScreen.main.bounds.height / 2, 92]
     
+    public init() {}
+    
     public func show(parentVc: UIViewController, contentVc: UIViewController, stateIndex: Int = 1) {
         self.parentVc = parentVc
         self.contentVc = contentVc
@@ -66,7 +68,7 @@ public class ACBottomSheet {
         }
     }
     
-    func onStateChanged(callback: @escaping ((Int) -> Void)) {
+    public func onStateChanged(callback: @escaping ((Int) -> Void)) {
         self.callback = callback
     }
     

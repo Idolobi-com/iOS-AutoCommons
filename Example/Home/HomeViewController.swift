@@ -67,7 +67,9 @@ class HomeViewController: UICollectionViewController {
         }
         
         buttonGhost.onClick {
-            ACSnacky.show(title: "Button Ghost Normal clicked !")
+            let targetVC = HomeRouter.createModule(param: HomeParam())
+            let bottomSheet = ACBottomSheet()
+            bottomSheet.show(parentVc: self, contentVc: targetVC)
         }
         
         buttonNude.onClick {

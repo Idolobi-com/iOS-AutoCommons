@@ -70,6 +70,7 @@
 		7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */; };
 		7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */; };
 		7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */; };
+		7BBC035B24F5563600A88A47 /* ACAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC035A24F5563500A88A47 /* ACAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheetViewController.swift; sourceTree = "<group>"; };
 		7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheet.swift; sourceTree = "<group>"; };
 		7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPholidota.swift; sourceTree = "<group>"; };
+		7BBC035A24F5563500A88A47 /* ACAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +356,7 @@
 				7BB3069724E172C800DFFB7F /* ACLogger.swift */,
 				7BB3069A24E172C900DFFB7F /* ACTextFieldFilter.swift */,
 				7BB3069C24E172C900DFFB7F /* ACThirdPartyApp.swift */,
+				7BBC035A24F5563500A88A47 /* ACAlert.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */,
 				7BB3069D24E172C900DFFB7F /* ACLogger.swift in Sources */,
 				7BB3067D24E1717B00DFFB7F /* ACLabelIcon.swift in Sources */,
+				7BBC035B24F5563600A88A47 /* ACAlert.swift in Sources */,
 				7BB3068124E171E300DFFB7F /* ACLayout.swift in Sources */,
 				7B18500824E67D9800F58E22 /* ACSnacky.swift in Sources */,
 				7BB3069E24E172C900DFFB7F /* ACInputValidator.swift in Sources */,
