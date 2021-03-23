@@ -28,6 +28,16 @@ public class ACLayout {
         return button
     }
     
+    public func buttonText(id: String, title: String, fontStyle: ACFontStyle, color: UIColor?) -> UIButton {
+        let button = UIButton(type: .system)
+        button.accessibilityIdentifier = "buttonText_\(id)"
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(color, for: .normal)
+        button.titleLabel?.font = UIFont(name: fontStyle.font, size: CGFloat(fontStyle.size))
+        return button
+    }
+    
     public func collectionView(id: String, layout: ACCollectionViewFlowLayout) -> ACCollectionView {
         let collectionView = ACCollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.accessibilityIdentifier = "acCollectionView_\(id)"
@@ -83,9 +93,9 @@ public class ACLayout {
         return segmentedControl
     }
     
-    public func textfield(id: String, placeHolder: String? = nil,
+    public func textfield(id: String, placeHolder: String? = nil, title: String? = nil,
                style: ACRoseTextFieldStyle) -> ACTextField {
-        let textField = ACTextField(style: style)
+        let textField = ACTextField(style: style, title: title)
         textField.accessibilityIdentifier = "textfield_\(id)"
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.textField.autocapitalizationType = .sentences
@@ -117,10 +127,12 @@ public class ACLayout {
         return webView
     }
     
-    public func stackView(id: String) -> ACStackView {
+    public func stackView(id: String, axis: NSLayoutConstraint.Axis = .vertical, spacing: CGFloat = 16) -> ACStackView {
         let stackView = ACStackView(frame: .zero)
         stackView.accessibilityIdentifier = "acStackview_\(id)"
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = axis
+        stackView.spacing = spacing
         return stackView
     }
     
@@ -213,6 +225,47 @@ public class ACLayout {
         button.layer.shadowRadius = 5
         button.layer.shadowOpacity = 0.25
         return button
+    }
+    
+    public func scrollView(id: String) -> ACScrollView {
+        let scrollView = ACScrollView(frame: .zero)
+        scrollView.accessibilityIdentifier = "scrollView_\(id)"
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.showsHorizontalScrollIndicator = false
+        return scrollView
+    }
+    
+    public func spinner(id: String, title: String? = nil, style: ACRoseTextFieldStyle, delegate: UIPickerViewDelegate & UIPickerViewDataSource & UITextFieldDelegate) -> ACSpinner {
+        let spinner = ACSpinner(style: style, delegate: delegate)
+        spinner.accessibilityIdentifier = "spinner_\(id)"
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        spinner.containerTextField.setTitle(title)
+        return spinner
+    }
+    
+    public func dateSpinner(id: String, title: String? = nil, style: ACRoseTextFieldStyle, delegate: UIPickerViewDelegate & UIPickerViewDataSource & UITextFieldDelegate) -> ACDateSpinner {
+        let spinner = ACDateSpinner(style: style, delegate: delegate)
+        spinner.accessibilityIdentifier = "dateSpinner_\(id)"
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        spinner.containerTextField.setTitle(title)
+        return spinner
+    }
+    
+    public func pickerView(id: String, delegate: (UIPickerViewDelegate & UIPickerViewDataSource)? = nil) -> ACPickerView{
+        let picker = ACPickerView()
+        picker.accessibilityIdentifier = "picker_acSpinner_picker"
+        picker.translatesAutoresizingMaskIntoConstraints = false
+        picker.dataSource = delegate
+        picker.delegate = delegate
+        return picker
+    }
+    
+    public func datePickerView(id: String, mode: UIDatePicker.Mode = .date) -> ACDatePickerView{
+        let picker = ACDatePickerView()
+        picker.accessibilityIdentifier = "picker_acSpinner_datePicker"
+        picker.translatesAutoresizingMaskIntoConstraints = false
+        picker.datePickerMode = mode
+        return picker
     }
     
 }

@@ -16,9 +16,15 @@ public class ACTextField: UIView {
         return stackView
     }()
     
-    lazy var textField: ACRoseTextField = {
+    public let labelTitle: ACLabel = {
+        return acLayout.label(id: "title", style: .headline, text: "", color: .black60)
+    }()
+    
+    public lazy var textField: ACRoseTextField = {
         return ACRoseTextField(style: .border)
     }()
+    
+    var title: String? = nil
     
     let labelMessage: UILabel = {
         let label = UILabel(frame: .zero)
@@ -35,14 +41,17 @@ public class ACTextField: UIView {
         return label
     }()
     
-    init(style: ACRoseTextFieldStyle) {
+    init(style: ACRoseTextFieldStyle, title: String? = nil) {
         super.init(frame: .zero)
+        self.title = title
         textField = ACRoseTextField(style: style)
         textField.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
+        addSubview(labelTitle)
         addSubview(textField)
         addSubview(labelMessage)
         setupComponent()
+        setupStackView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -54,32 +63,46 @@ public class ACTextField: UIView {
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            bottomAnchor.constraint(equalTo: stackView.bottomAnchor)])
+            bottomAnchor.constraint(equalTo: stackView.bottomAnchor)
+        ])
         
         NSLayoutConstraint.activate([
+            labelTitle.consLeading(view: stackView),
+            labelTitle.consTrailing(view: stackView),
             textField.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             textField.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
             textField.heightAnchor.constraint(equalToConstant: 40),
             labelMessage.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
             labelMessage.trailingAnchor.constraint(equalTo: stackView.trailingAnchor)
-            ])
-        
+        ])
+    }
+    
+    private func setupStackView() {
         stackView.axis = .vertical
         stackView.spacing = 4
         stackView.addArrangedSubview(textField)
         stackView.addArrangedSubview(labelMessage)
+        setTitle(title)
     }
     
-    func setOnError(message: String?) {
+    public func setTitle(_ title: String?) {
+        if title != nil {
+            stackView.insertArrangedSubview(labelTitle, at: 0)
+        } else {
+            stackView.removeArrangedSubview(labelTitle)
+        }
+        labelTitle.text = title
+    }
+    
+    public func setOnError(message: String?) {
         let isError = message != nil
         labelMessage.isHidden = !isError
         textField.setOnError(isError: isError)
         if isError {
             stackView.addArrangedSubview(labelMessage)
-            labelMessage.text = message
         } else {
             stackView.removeArrangedSubview(labelMessage)
-            labelMessage.text = ""
         }
+        labelMessage.text = message
     }
 }

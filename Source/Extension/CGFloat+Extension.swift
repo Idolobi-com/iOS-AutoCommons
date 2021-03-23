@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CGFloat {
+public extension CGFloat {
     
     static var cornerSmall: CGFloat {
         return CGFloat(2)

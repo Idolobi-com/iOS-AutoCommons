@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Encodable {
+public extension Encodable {
     func toDictionary() -> [String: Any] {
         guard let data = try? JSONEncoder().encode(self) else {
             ACLogger.d("<Encodable>.toDictionary(): JSONEncoder error")

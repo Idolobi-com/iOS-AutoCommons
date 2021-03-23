@@ -47,7 +47,7 @@ open class ACButton: UIButton, ACButtonBehavior {
         }
         if style.height != 0 {
             self.heightAnchor.constraint(equalToConstant: style.height).isActive = true
-            self.layer.cornerRadius = .cornerMedium
+            self.layer.cornerRadius = .cornerLarge
             contentEdgeInsets = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
         }
     }

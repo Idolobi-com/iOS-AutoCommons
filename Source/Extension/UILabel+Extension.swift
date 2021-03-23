@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     func setHTMLFromString(htmlText: String, fontStyle: String = ACFontStyle.body.font, fontSize: CGFloat = ACFontStyle.body.size) {
         let modifiedFont = String(format: "<span style=\"font-family: '-apple-system', '\(fontStyle)'; font-size: \(fontSize)\">%@</span>", htmlText)
         do {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
     
     var clean: String {
         let round = roundedDecimal(to: 1)

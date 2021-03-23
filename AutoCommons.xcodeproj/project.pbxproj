@@ -24,6 +24,13 @@
 		7B39225824E2E3980048E568 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39225124E2E3980048E568 /* HomeViewController.swift */; };
 		7B39225924E2E3980048E568 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39225224E2E3980048E568 /* HomeInteractor.swift */; };
 		7B39225A24E2E3980048E568 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B39225324E2E3980048E568 /* HomeEntity.swift */; };
+		7B47A259254BC6F100F34656 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B47A258254BC6F100F34656 /* Media.xcassets */; };
+		7B47A25B254BDDC300F34656 /* ACImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B47A25A254BDDC300F34656 /* ACImage.swift */; };
+		7B47A25D254C2F2E00F34656 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B47A25C254C2F2E00F34656 /* UITextField+Extension.swift */; };
+		7BA397F5254A64B20048CA34 /* ACSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA397F4254A64B20048CA34 /* ACSpinner.swift */; };
+		7BA397F7254A9CF30048CA34 /* ACPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA397F6254A9CF30048CA34 /* ACPickerView.swift */; };
+		7BAA734D2584DADF009BA312 /* ACDateSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA734C2584DADF009BA312 /* ACDateSpinner.swift */; };
+		7BAA73542584DB4B009BA312 /* ACDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA73532584DB4B009BA312 /* ACDatePicker.swift */; };
 		7BB3063624E1693600DFFB7F /* AutoCommons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB3062C24E1693600DFFB7F /* AutoCommons.framework */; };
 		7BB3063B24E1693600DFFB7F /* AutoCommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3063A24E1693600DFFB7F /* AutoCommonsTests.swift */; };
 		7BB3063D24E1693600DFFB7F /* AutoCommons.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB3062F24E1693600DFFB7F /* AutoCommons.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -70,7 +77,11 @@
 		7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */; };
 		7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */; };
 		7BB306BD24E173FE00DFFB7F /* ACPholidota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */; };
+		7BB96EFC25491089007946F1 /* ACScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB96EFB25491089007946F1 /* ACScrollView.swift */; };
+		7BBAC1492583AC740083E7F0 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAC1482583AC740083E7F0 /* UIView+Constraint.swift */; };
 		7BBC035B24F5563600A88A47 /* ACAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC035A24F5563500A88A47 /* ACAlert.swift */; };
+		7BD382622547BA2B00D0A528 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD382612547BA2B00D0A528 /* UICollectionView+Extension.swift */; };
+		7BD3837C2547C20A00D0A528 /* ACCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3837B2547C20A00D0A528 /* ACCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +130,13 @@
 		7B39225124E2E3980048E568 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7B39225224E2E3980048E568 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		7B39225324E2E3980048E568 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		7B47A258254BC6F100F34656 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		7B47A25A254BDDC300F34656 /* ACImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACImage.swift; sourceTree = "<group>"; };
+		7B47A25C254C2F2E00F34656 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		7BA397F4254A64B20048CA34 /* ACSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSpinner.swift; sourceTree = "<group>"; };
+		7BA397F6254A9CF30048CA34 /* ACPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACPickerView.swift; sourceTree = "<group>"; };
+		7BAA734C2584DADF009BA312 /* ACDateSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACDateSpinner.swift; sourceTree = "<group>"; };
+		7BAA73532584DB4B009BA312 /* ACDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACDatePicker.swift; sourceTree = "<group>"; };
 		7BB3062C24E1693600DFFB7F /* AutoCommons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoCommons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB3062F24E1693600DFFB7F /* AutoCommons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoCommons.h; sourceTree = "<group>"; };
 		7BB3063024E1693600DFFB7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,7 +186,11 @@
 		7BB306B724E173E800DFFB7F /* ACBottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheetViewController.swift; sourceTree = "<group>"; };
 		7BB306B824E173E800DFFB7F /* ACBottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBottomSheet.swift; sourceTree = "<group>"; };
 		7BB306BC24E173FE00DFFB7F /* ACPholidota.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPholidota.swift; sourceTree = "<group>"; };
+		7BB96EFB25491089007946F1 /* ACScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACScrollView.swift; sourceTree = "<group>"; };
+		7BBAC1482583AC740083E7F0 /* UIView+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
 		7BBC035A24F5563500A88A47 /* ACAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACAlert.swift; sourceTree = "<group>"; };
+		7BD382612547BA2B00D0A528 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		7BD3837B2547C20A00D0A528 /* ACCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +315,7 @@
 				7BB306A324E1731D00DFFB7F /* Misc */,
 				7BB3062F24E1693600DFFB7F /* AutoCommons.h */,
 				7BB3063024E1693600DFFB7F /* Info.plist */,
+				7B47A258254BC6F100F34656 /* Media.xcassets */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -316,6 +339,9 @@
 				7BB3065024E16DA000DFFB7F /* Encodable+Extension.swift */,
 				7BB3065224E16ED000DFFB7F /* CGFloat+Extension.swift */,
 				7BB3065424E16F4000DFFB7F /* UIView+Extension.swift */,
+				7BD382612547BA2B00D0A528 /* UICollectionView+Extension.swift */,
+				7B47A25C254C2F2E00F34656 /* UITextField+Extension.swift */,
+				7BBAC1482583AC740083E7F0 /* UIView+Constraint.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -343,6 +369,13 @@
 				7BB3066924E1717B00DFFB7F /* ACWebView.swift */,
 				7BB3065A24E1717900DFFB7F /* ACQRCodeView.swift */,
 				7BB3068024E171E300DFFB7F /* ACLayout.swift */,
+				7BD3837B2547C20A00D0A528 /* ACCollectionViewCell.swift */,
+				7BB96EFB25491089007946F1 /* ACScrollView.swift */,
+				7BA397F4254A64B20048CA34 /* ACSpinner.swift */,
+				7BA397F6254A9CF30048CA34 /* ACPickerView.swift */,
+				7B47A25A254BDDC300F34656 /* ACImage.swift */,
+				7BAA734C2584DADF009BA312 /* ACDateSpinner.swift */,
+				7BAA73532584DB4B009BA312 /* ACDatePicker.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -591,6 +624,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B47A259254BC6F100F34656 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +676,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD3837C2547C20A00D0A528 /* ACCollectionViewCell.swift in Sources */,
+				7BAA734D2584DADF009BA312 /* ACDateSpinner.swift in Sources */,
 				7BB3065824E1702400DFFB7F /* ACFontStyle.swift in Sources */,
 				7BB306A124E172C900DFFB7F /* ACDebouncer.swift in Sources */,
 				7BB3064F24E16D6D00DFFB7F /* String+Extension.swift in Sources */,
@@ -658,21 +694,29 @@
 				7BB306B924E173E800DFFB7F /* ACBottomSheetViewController.swift in Sources */,
 				7BB306A024E172C900DFFB7F /* ACTextFieldFilter.swift in Sources */,
 				7BB3066D24E1717B00DFFB7F /* ACQRCodeView.swift in Sources */,
+				7BA397F5254A64B20048CA34 /* ACSpinner.swift in Sources */,
 				7BB3064D24E16D5200DFFB7F /* UIColor+Extension.swift in Sources */,
 				7BB3067124E1717B00DFFB7F /* ACStackView.swift in Sources */,
 				7BB3066F24E1717B00DFFB7F /* ACIndicatorView.swift in Sources */,
+				7BD382622547BA2B00D0A528 /* UICollectionView+Extension.swift in Sources */,
 				7BB3067E24E1717B00DFFB7F /* ACSlider.swift in Sources */,
 				7BB3069D24E172C900DFFB7F /* ACLogger.swift in Sources */,
+				7B47A25D254C2F2E00F34656 /* UITextField+Extension.swift in Sources */,
 				7BB3067D24E1717B00DFFB7F /* ACLabelIcon.swift in Sources */,
 				7BBC035B24F5563600A88A47 /* ACAlert.swift in Sources */,
 				7BB3068124E171E300DFFB7F /* ACLayout.swift in Sources */,
+				7B47A25B254BDDC300F34656 /* ACImage.swift in Sources */,
 				7B18500824E67D9800F58E22 /* ACSnacky.swift in Sources */,
 				7BB3069E24E172C900DFFB7F /* ACInputValidator.swift in Sources */,
 				7BB3067324E1717B00DFFB7F /* ACTextView.swift in Sources */,
 				7BB3067924E1717B00DFFB7F /* ACRefreshControl.swift in Sources */,
+				7BBAC1492583AC740083E7F0 /* UIView+Constraint.swift in Sources */,
+				7BB96EFC25491089007946F1 /* ACScrollView.swift in Sources */,
 				7BB306A224E172C900DFFB7F /* ACThirdPartyApp.swift in Sources */,
+				7BAA73542584DB4B009BA312 /* ACDatePicker.swift in Sources */,
 				7BB3066E24E1717B00DFFB7F /* ACImageViewNetwork.swift in Sources */,
 				7BB306BA24E173E800DFFB7F /* ACBottomSheet.swift in Sources */,
+				7BA397F7254A9CF30048CA34 /* ACPickerView.swift in Sources */,
 				7BB3067B24E1717B00DFFB7F /* ACRoseTextField.swift in Sources */,
 				7BB3067724E1717B00DFFB7F /* ACSwitcher.swift in Sources */,
 				7BB3067A24E1717B00DFFB7F /* ACImageView.swift in Sources */,
@@ -974,6 +1018,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_ONLY_ACTIVE_RESOURCES = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1001,6 +1046,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_ONLY_ACTIVE_RESOURCES = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

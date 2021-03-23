@@ -9,8 +9,8 @@
 import UIKit
 import AutoCommons
 
-class HomeViewController: UICollectionViewController {
-    
+class HomeViewController: UICollectionViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+
     var presenter: HomeViewToPresenterProtocol?
     var param: HomeParam?
     
@@ -26,6 +26,12 @@ class HomeViewController: UICollectionViewController {
         return acLayout.button(id: "nude", style: .nudeNormal, title: "Button Nude Normal", titleColor: .green50)
     }()
     
+    lazy var spinner: ACSpinner = {
+        return acLayout.spinner(id: "spinner", title: "Spinner", style: .border, delegate: self)
+    }()
+    
+    let vehicles = ["Lamborghini", "Ferarri", "McLaren"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -33,12 +39,17 @@ class HomeViewController: UICollectionViewController {
         setupComponent()
         setupConstraint()
         setupListener()
+        spinner.setText(title: vehicles[2])
+        spinner.selectRow(row: 2)
+        ACLogger.d("\(spinner.selectedRow())")
     }
     
     private func setupComponent() {
         view.addSubview(buttonFill)
         view.addSubview(buttonGhost)
         view.addSubview(buttonNude)
+        view.addSubview(spinner)
+        spinner.useToolBar(title: "Select")
     }
     
     private func setupConstraint() {
@@ -59,26 +70,43 @@ class HomeViewController: UICollectionViewController {
             buttonNude.consLeading(view: view, constant: 16),
             buttonNude.consTrailing(view: view, constant: -16)
         ])
+        
+        NSLayoutConstraint.activate([
+            spinner.topAnchor.constraint(equalTo: buttonNude.bottomAnchor, constant: 16),
+            spinner.consLeading(view: view, constant: 16),
+            spinner.consTrailing(view: view, constant: -16)
+            ])
     }
     
     private func setupListener() {
         buttonFill.onClick {
-            ACSnacky.show(title: "Button Fill Normal clicked !")
+            ACSnacky.show(title: "Button fill clicked !")
         }
-        
         buttonGhost.onClick {
-            let targetVC = HomeRouter.createModule(param: HomeParam())
-            let bottomSheet = ACBottomSheet()
-            bottomSheet.show(parentVc: self, contentVc: targetVC)
+            ACSnacky.show(title: "Button ghost clicked !")
         }
-        
         buttonNude.onClick {
-            ACSnacky.show(view: self.view, title: "Title wkwkkwk wkkwkwk wkwkkw kwkwkw wkkwkw wkkwkw kwkwk wkkwkw kwkwk", buttonTitle: "Title", completion: { (isClick) in
-                if isClick {
-                    ACSnacky.show(title: "Clicked")
-                }
-            })
+            ACSnacky.show(title: "Button nude clicked !")
         }
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return vehicles.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return vehicles[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        spinner.setText(title: vehicles[row])
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        return false
+    }
 }

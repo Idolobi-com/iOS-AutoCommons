@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ACDateFormatType {
+public enum ACDateFormatType {
     case short, medium, long
     
     var format: String {
@@ -23,9 +23,9 @@ enum ACDateFormatType {
     }
 }
 
-class ACFormatter {
+open class ACFormatter {
     
-    static func formatPrice(_ price: Double?) -> String {
+    public static func formatPrice(_ price: Double?) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         numberFormatter.groupingSeparator = "."
@@ -34,11 +34,11 @@ class ACFormatter {
         return "\(formattedNumber ?? "")"
     }
     
-    static func formatLocalPrice(_ price: Double?) -> String {
+    public static func formatLocalPrice(_ price: Double?) -> String {
         return "Rp\(formatPrice(price))"
     }
     
-    static func formatDate(_ unformattedDate: String, formatType: ACDateFormatType) -> String {
+    public static func formatDate(_ unformattedDate: String, formatType: ACDateFormatType) -> String {
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         dateFormatterGet.timeZone = TimeZone(abbreviation: "UTC")
@@ -53,21 +53,21 @@ class ACFormatter {
         return "\(unformattedDate[..<index])"
     }
     
-    static func getDateOf(_ unformattedDate: String) -> Date? {
+    public static func getDateOf(_ unformattedDate: String) -> Date? {
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         return dateFormatterGet.date(from: unformattedDate)
     }
     
-    static func getDateMilliSecond(date: Date) -> Int64 {
+    public static func getDateMilliSecond(date: Date) -> Int64 {
         return Int64(date.timeIntervalSince1970 * 1000)
     }
     
-    static func getDateMilliSecond(_ unformattedDate: String) -> Int64 {
+    public static func getDateMilliSecond(_ unformattedDate: String) -> Int64 {
         return Int64((getDateOf(unformattedDate)?.timeIntervalSince1970 ?? 0) * 1000)
     }
     
-    static func getCurrentDate() -> String {
+    public static func getCurrentDate() -> String {
         let date = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
